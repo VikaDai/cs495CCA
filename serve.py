@@ -25,10 +25,7 @@ def get_private_ip():
     return f"Private IP address: {private_ip}\n"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=81)
-
-
-# In[ ]:
+    app.run(host='0.0.0.0', port=5001)
 
 
 
