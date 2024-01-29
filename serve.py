@@ -14,7 +14,7 @@ app = Flask(__name__)
 def stress_cpu():
     if request.method == 'POST':
         # Start the stress_cpu.py script in a separate process
-        subprocess.Popen(['python', 'stress_cpu.py'])
+        subprocess.Popen(['python3', 'stress_cpu.py'])
         return jsonify(message="CPU stress test started"), 200
 
 @app.route('/', methods=['GET'])
